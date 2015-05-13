@@ -1,0 +1,8 @@
+Type: multifile
+Multifile: etc/pam.d/common-auth
+
+Type: subfile
+Multifile: etc/pam.d/common-auth
+Subfile: etc/pam.d/common-auth.d/45netknights-otp
+# If these variables are changed, the config file is generated anew
+Variables: ^privacyidea/pam/.*

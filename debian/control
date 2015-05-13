@@ -1,0 +1,12 @@
+Source: privacyidea-ucs-pam
+Maintainer: NetKnights GmbH  <info@netknights.it>
+Section: admin
+Priority: optional
+Build-Depends: debhelper (>= 7.4.3)
+Standards-Version: 3.9.5
+
+Package: privacyidea-ucs-pam
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-requests, python-passlib, libpam-python 
+Description: Run PAM module for privacyIDEA
+ 
