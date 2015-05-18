@@ -1,6 +1,7 @@
-privacyidea-ucs-pam (2.3~dev0) wheezy; urgency=low
+privacyidea-ucs-pam (2.2~dev1) wheezy; urgency=low
 
   * Add PAM
+  * Add UMC
 
- -- NetKnights GmbH <info@netknights.it>  Tue, 21 Apr 2015 09:45:00 +0200
+ -- NetKnights GmbH <info@netknights.it>  Wed, 13 May 2015 23:45:00 +0200
 

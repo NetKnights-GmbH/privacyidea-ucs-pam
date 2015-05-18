@@ -12,6 +12,7 @@ if [ -f /usr/share/dbconfig-common/dpkg/postinst.pgsql  ]; then
 fi
 
 ucr unset privacyidea/pam/enable
+ucr unset privacyidea/umc/enable
 
 #DEBHELPER#
 exit 0
