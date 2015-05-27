@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# UnJoin script that removes the join script
+#
+# 2015-05-27 NetKnights GmbH, <info@netknights.it>
+#            * This script deletes the join script
+
+
+VERSION=1
+# revert joinscript_save_current_version - so that the join script
+# would run again if the app is reinstalled
+#joinscript_remove_script_from_status_file 12privacyidea.inst
+joinscript_remove_script_from_status_file privacyideapam
+
+exit 0

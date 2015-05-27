@@ -1,0 +1,14 @@
+<p>
+privacyIDEA PAM is a module that can be used to authenticate at PAM based systems like
+SSH with a second factor. This second factor is managed by a privacyIDEA server that
+is installed somewhere in your network.
+</p>
+<p>
+You can configure privacyIDEA PAM using UCR variables:
+<ul>
+<li><b>privacyidea/pam/url</b> The URL of the privacyIDEA server.
+</li>
+<li><b>privacyidea/pam/enable</b> Set to "1" to enable OTP authentication.
+</li>
+</ul>
+</p>

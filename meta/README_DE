@@ -1,0 +1,15 @@
+<p>
+privacyIDEA PAM ist das Modul, mit dem man sich an PAM basierten Systemen wie bpsw. 
+SSH mit einem zweiten Faktor anmelden kann. Dieser wird für die Benutzer im privacyIDEA
+Server verwaltet. Der privacyIDEA Server kann auf einem beliebigen UCS System in
+Ihrem Netzwerk installiert sein.
+</p>
+<p>
+privacyIDEA PAM konfigurieren Sie über UCR Variablen:
+<ul>
+<li><b>privacyidea/pam/url</b> beschreibt die URL, wo der privacyIDEA Server gefunden wird. Dies kann bspw. https://yourserver/privacyidea sein.
+</li>
+<li><b>privacyidea/pam/enable</b> setzen Sie diesen Wert auf "1", um die PAM Anbindung zu aktivieren.
+</li>
+</ul>
+</p>

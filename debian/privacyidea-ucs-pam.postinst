@@ -1,0 +1,31 @@
+#!/bin/sh
+# see: dh_installdeb(1)
+
+set -e
+
+# source debconf library
+. /usr/share/debconf/confmodule
+
+# Source dbconfig-common functions
+if [ -f /usr/share/dbconfig-common/dpkg/postinst.pgsql  ]; then
+  . /usr/share/dbconfig-common/dpkg/postinst.pgsql
+fi
+
+SERVICE="privacyIDEA"
+eval "$(ucr shell)"
+domainname=$(ucr get domainname)
+
+# get count
+count=`univention-ldapsearch '(univentionService=privacyIDEA)' displayName | grep ^displayName | wc -l`
+
+if [ '$count' == '1' ]; then
+    # get hostname
+    hostname=`univention-ldapsearch '(univentionService=privacyIDEA)' displayName | grep ^displayName | cut -f2 -d':' | sed -es/\ //g`
+    ucr set privacyidea/pam/url=$hostname.$domainname
+fi
+
+#DEBHELPER#
+
+db_stop
+
+exit 0

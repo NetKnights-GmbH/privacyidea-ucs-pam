@@ -1,2 +1,5 @@
 deploy/privacyidea_pam.py			usr/share/privacyidea/
 
+# join script
+#deploy/usr/lib/univention-install/12privacyideapam.inst usr/lib/univention-install/
+#deploy/usr/lib/univention-uninstall/12privacyideapam.uinst usr/lib/univention-uninstall/

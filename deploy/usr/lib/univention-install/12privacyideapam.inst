@@ -1,0 +1,29 @@
+#!/bin/sh
+#
+# Join script to check if privacyIDEA is installed and set the UCS variable
+#
+# 2015-0-273 NetKnights GmbH, <info@netknights.it>
+#            This script checks if a single privacyIDEA is installed and sets
+#            the UCR variable
+#
+VERSION=1
+. /usr/share/univention-join/joinscripthelper.lib
+. /usr/share/univention-lib/ldap.sh
+
+joinscript_init
+SERVICE="privacyIDEA"
+eval "$(ucr shell)"
+domainname=$(ucr get domainname)
+
+# get count
+count=`univention-ldapsearch '(univentionService=privacyIDEA)' displayName | grep ^displayName | wc -l`
+
+if [ '$count' == '1' ]; then
+    # get hostname
+    hostname=`univention-ldapsearch '(univentionService=privacyIDEA)' displayName | grep ^displayName | cut -f2 -d':' | sed -es/\ //g`
+    ucr set privacyidea/pam/url=$hostname.$domainname
+fi
+
+joinscript_save_current_version
+
+exit 0
