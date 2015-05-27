@@ -6,20 +6,3 @@ Multifile: etc/pam.d/common-auth
 Subfile: etc/pam.d/common-auth.d/45netknights-otp
 # If these variables are changed, the config file is generated anew
 Variables: ^privacyidea/pam/.*
-
-Type: multifile
-Multifile: etc/pam.d/univention-management-console
-
-Type: subfile
-Multifile: etc/pam.d/univention-management-console
-Subfile: etc/pam.d/univention-management-console.d/45netknights-otp
-Variables: ^privacyidea/umc/.*
-
-Type: subfile
-Multifile: etc/pam.d/univention-management-console
-Subfile: etc/pam.d/univention-management-console.d/50univention-original
-Variables: ^auth/methods, ^auth/passwdcache.*
-
-Type: subfile
-Multifile: etc/pam.d/univention-management-console
-Subfile: etc/pam.d/univention-management-console.d/10univention-original-header

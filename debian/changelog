@@ -1,7 +1,7 @@
-privacyidea-ucs-pam (2.2~dev1) wheezy; urgency=low
+privacyidea-ucs-pam (2.3-1) wheezy; urgency=low
 
   * Add PAM
-  * Add UMC
+  * Add postinst script, that sets the privacyidea/pam/url UCR variable
 
- -- NetKnights GmbH <info@netknights.it>  Wed, 13 May 2015 23:45:00 +0200
+ -- NetKnights GmbH <info@netknights.it>  Wed, 27 May 2015 23:45:00 +0200
 

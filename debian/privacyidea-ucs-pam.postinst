@@ -18,10 +18,10 @@ domainname=$(ucr get domainname)
 # get count
 count=`univention-ldapsearch '(univentionService=privacyIDEA)' displayName | grep ^displayName | wc -l`
 
-if [ '$count' == '1' ]; then
+if [ $count -eq 1 ]; then
     # get hostname
     hostname=`univention-ldapsearch '(univentionService=privacyIDEA)' displayName | grep ^displayName | cut -f2 -d':' | sed -es/\ //g`
-    ucr set privacyidea/pam/url=$hostname.$domainname
+    ucr set privacyidea/pam/url=https://$hostname.$domainname/privacyidea
 fi
 
 #DEBHELPER#
