@@ -6,7 +6,7 @@ prompt = baseConfig.get('privacyidea/pam/prompt', 'OTP: ')
 realm = baseConfig.get('privacyidea/pam/realm', '')
 
 pam_config = '''
-auth     sufficient     pam_python.so /usr/share/privacyidea/privacyidea_pam.py url=%s prompt=%s realm=%s
+auth     sufficient     pam_python.so /usr/share/privacyidea/privacyidea_pam.py url=%s prompt=%s realm=%s cacerts=/etc/univention/ssl/ucsCA/CAcert.pem
 ''' % (url, prompt, realm)
 
 if baseConfig.get('privacyidea/pam/enable'):
