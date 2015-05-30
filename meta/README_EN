@@ -12,3 +12,8 @@ You can configure privacyIDEA PAM using UCR variables:
 </li>
 </ul>
 </p>
+<p>
+PAM will be configured this way, that you need to authenticate with two factors against privacyIDEA.
+If this authentication fails, you can authenticate with the Domain password. For more sophisticated authentication scenarios, please contact the support of the vendor.
+</p>
+
