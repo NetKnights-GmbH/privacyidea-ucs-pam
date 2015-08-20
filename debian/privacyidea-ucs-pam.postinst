@@ -24,6 +24,10 @@ if [ $count -eq 1 ]; then
     ucr set privacyidea/pam/url=https://$hostname.$domainname/privacyidea
 fi
 
+# Create the sqlite file
+mkdir -p /etc/privacyidea
+touch /etc/privacyidea/pam.sqlite
+
 #DEBHELPER#
 
 db_stop
