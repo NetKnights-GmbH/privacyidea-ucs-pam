@@ -1,0 +1,8 @@
+<p>
+Änderungen in Version 2.7
+</p>
+<b>Neue Funktionalitäten</b>
+<ul>
+  <li>Unterstützt <b>try_first_pass</b> und kann somit in Szenarien
+	genutzt werden, in denen Benutzer mit und ohne Token existieren.</li>
+</ul>

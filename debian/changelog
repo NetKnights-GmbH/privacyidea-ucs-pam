@@ -1,3 +1,9 @@
+privacyidea-ucs-pam (2.7-1) wheezy; urgency=low
+
+  * Add try-first-pass
+
+ -- NetKnights GmbH <info@netknights.it>  Wed, 28 Oct 2015 09:00:00 +0200
+
 privacyidea-ucs-pam (2.3-1) wheezy; urgency=low
 
   * Add PAM

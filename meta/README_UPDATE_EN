@@ -1,0 +1,8 @@
+<p>
+Changes in version 2.7
+</p>
+<b>New Functionalities</b>
+<ul>
+  <li>Support for <b>try_first_pass</b>. Thus you can use PAM with OTP
+	in scenarios with users with and without tokens.</li>
+</ul>
