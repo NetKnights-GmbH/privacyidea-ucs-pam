@@ -14,5 +14,6 @@ privacyIDEA PAM konfigurieren Sie über UCR Variablen:
 </ul>
 </p>
 <p>
-PAM wird dann automatisch so konfiguriert, dass man sich mit zwei Faktoren gegen privacyIDEA anmelden muss. Wenn diese Anmeldung fehlschlägt, kann man sich mit dem Domänen-Passwort anmelden. Für weitere, detailliertere Konfigurationsmöglichkeiten kontaktieren Sie bitte den Support des Herstellers.
+PAM wird dann automatisch so konfiguriert, dass man sich mit zwei Faktoren gegen privacyIDEA anmelden muss. Wenn diese Anmeldung fehlschlägt, kann man sich mit dem Domänen-Passwort anmelden. Für weitere, detailliertere Konfigurationsmöglichkeiten kontaktieren Sie bitte den Support des Herstellers oder lesen Sie diesen 
+<a href="https://netknights.it/zwei-faktor-authentisierung-an-der-univention-management-console/">Blog-Beitrag</a>.
 </p>
