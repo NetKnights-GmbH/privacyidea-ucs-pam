@@ -9,11 +9,15 @@ You can configure privacyIDEA PAM using UCR variables:
 <li><b>privacyidea/pam/url</b> The URL of the privacyIDEA server.
 </li>
 <li><b>privacyidea/pam/enable</b> Set to "1" to enable OTP authentication.
+   PAM will be configured this way, that you need to authenticate with two factors against privacyIDEA.
+   If this authentication fails, you can authenticate with the Domain password. For more sophisticated 
+   authentication scenarios, please contact the support of the vendor.
+</li>
+<li><b>auth/umc/addon/privacyidea</b> Set this to "1" or True, to add two factor authentication with privacyIDEA to 
+  <em>Univention Management Console</em>.
+  For more detailed configuration and setup please contact the support of the vendor or read the
+  <a href="https://netknights.it/two-factor-authentication-at-the-univention-management-console/">Blog entry</a>.
 </li>
 </ul>
-</p>
-<p>
-PAM will be configured this way, that you need to authenticate with two factors against privacyIDEA.
-If this authentication fails, you can authenticate with the Domain password. For more sophisticated authentication scenarios, please contact the support of the vendor.
 </p>
 

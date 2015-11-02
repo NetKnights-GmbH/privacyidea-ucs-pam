@@ -9,11 +9,14 @@ privacyIDEA PAM konfigurieren Sie über UCR Variablen:
 <ul>
 <li><b>privacyidea/pam/url</b> beschreibt die URL, wo der privacyIDEA Server gefunden wird. Dies kann bspw. https://yourserver/privacyidea sein.
 </li>
-<li><b>privacyidea/pam/enable</b> setzen Sie diesen Wert auf "1", um die PAM Anbindung zu aktivieren.
+<li><b>privacyidea/pam/enable</b> setzen Sie diesen Wert auf "1", um die PAM Anbindung in <em>common-auth.d</em> zu aktivieren.
+  PAM wird dann automatisch so konfiguriert, dass man sich mit zwei Faktoren gegen privacyIDEA anmelden muss. 
+  Wenn diese Anmeldung fehlschlägt, kann man sich mit dem Domänen-Passwort anmelden.
+</li>
+<li><b>auth/umc/addon/privacyidea</b> setzen Sie diesen Wert auf "1" oder True, um die Anmeldung an der <em>Univention Management Console</em>
+  um einen zweiten Faktor gegen privacyIDEA zu erweitern.
+  Für weitere, detailliertere Konfigurationsmöglichkeiten kontaktieren Sie bitte den Support des Herstellers oder lesen Sie diesen
+  <a href="https://netknights.it/zwei-faktor-authentisierung-an-der-univention-management-console/">Blog-Beitrag</a>.
 </li>
 </ul>
-</p>
-<p>
-PAM wird dann automatisch so konfiguriert, dass man sich mit zwei Faktoren gegen privacyIDEA anmelden muss. Wenn diese Anmeldung fehlschlägt, kann man sich mit dem Domänen-Passwort anmelden. Für weitere, detailliertere Konfigurationsmöglichkeiten kontaktieren Sie bitte den Support des Herstellers oder lesen Sie diesen 
-<a href="https://netknights.it/zwei-faktor-authentisierung-an-der-univention-management-console/">Blog-Beitrag</a>.
 </p>

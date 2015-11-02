@@ -9,7 +9,7 @@ pam_config = '''
 auth     sufficient     pam_python.so /usr/share/privacyidea/privacyidea_pam.py url=%s prompt=%s realm=%s cacerts=/etc/univention/ssl/ucsCA/CAcert.pem
 ''' % (url, prompt, realm)
 
-if baseConfig.is_true('privacyidea/pam/enable', False):
+if baseConfig.is_true('auth/umc/addon/privacyidea', False):
 	print pam_config
 
 @!@
