@@ -1,4 +1,11 @@
 <p>
+Änderungen in Version 2.7.1
+</p>
+<ul>
+	<li>Problem mit möglicher SQL-Injection bei Offline OTP behoben.</li>
+	<li>Prompt Handling verbessert.</li>
+</ul>
+<p>
 Änderungen in Version 2.7
 </p>
 <b>Neue Funktionalitäten</b>

@@ -1,4 +1,11 @@
 <p>
+Changes in version 2.7.1
+</p>
+<ul>
+	<li>Fix possible SQL injection in case of Offline OTP.</li>
+	<li>Improve prompt handling.</li>
+</ul>
+<p>
 Changes in version 2.7
 </p>
 <b>New Functionalities</b>
