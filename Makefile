@@ -15,7 +15,6 @@ clean:
 builddeb:
 	make clean
 	mkdir -p DEBUILD/privacyidea-ucs-pam.org
-	cp ../privacyidea/authmodules/pam_python/privacyidea_pam.py deploy/ || true
 	cp -r ${SRCDIRS} ${SRCFILES} DEBUILD/privacyidea-ucs-pam.org || true
 	# We need to touch this, so that our config files 
 	# are written to /etc
