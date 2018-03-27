@@ -1,3 +1,9 @@
+privacyidea-ucs-pam (2.22-1) wheezy; urgency=low
+
+  * Add offline refill
+ 
+ -- NetKnights GmbH <info@netknights.it>  Tue, 27 Mar 2018 12:00:00 +0200
+
 privacyidea-ucs-pam (2.7.1-1) wheezy; urgency=low
 
   * fix possible SQL injection for offline OTP
